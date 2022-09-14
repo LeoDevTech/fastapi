@@ -1,7 +1,5 @@
-from fastapi import FastAPI, Depends
-from sqlalchemy import orm
-from schemas.Users import UserCreate
-from services.database import get_db, create_database
+from fastapi import FastAPI
+from services import create_database
 
 api = FastAPI(
     title="API",
